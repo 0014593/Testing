@@ -2,6 +2,8 @@ FROM python:2.7-slim
 
 WORKDIR /app
 
+RUN apt-get update
+
 EXPOSE 82
 
 CMD ["python", "app.py"]
